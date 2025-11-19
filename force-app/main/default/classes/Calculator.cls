@@ -11,9 +11,9 @@ public class Calculator {
     }
     
      public static void Mul(Integer var1, Integer var2){
-        Integer mul;
-        mul = var1 * var2;
-        System.debug('Mul =' +mul);
+        Integer mu;
+        mu = var1 * var2;
+        System.debug('Mul =' +mu);
     }
     public static void Div(Integer var1, Integer var2){
         Integer div;
