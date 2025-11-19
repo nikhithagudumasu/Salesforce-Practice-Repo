@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Sync Agreement" icon-name="standard:agreement">
+        <div class="slds-m-around_medium">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+            <template if:false={isLoading}>
+                <p class="slds-text-body_regular">
+                    Click the button below to sync the agreement associated with this record.
+                </p>
+                <lightning-button
+                    label="Sync Agreement"
+                    onclick={handleSyncAgreement}
+                    variant="brand">
+                </lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>
